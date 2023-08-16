@@ -50,8 +50,8 @@ console.log(typeof c)
 
 let promp_1 = prompt('your firstName')
 let promp_2 = prompt('your lastName')
-let promp_3 = prompt('your age')
+let promp_3 = +prompt('your age')
 
-let prompRes = `name "${promp_1} ${promp_2}" you "${promp_3}" age.`
+let prompRes = `name "${promp_1} ${promp_2}" you ${promp_3} age.`
 
 console.log(prompRes)
