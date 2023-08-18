@@ -93,7 +93,7 @@ if (a !== 0) {
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
 let time = +prompt('entry time')
-if (time === 0 && time <= 14) {
+if (time >= 0 && time <= 14) {
     console.log('first quarter')
 } else if (time >= 15 && time <= 29 ){
     console.log('second quarter')
