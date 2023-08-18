@@ -93,13 +93,13 @@ if (a !== 0) {
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
 let time = +prompt('entry time')
-if (time === 0 || time <= 14) {
+if (time === 0 && time <= 14) {
     console.log('first quarter')
-} else if (time <= 29 ){
+} else if (time >= 15 && time <= 29 ){
     console.log('second quarter')
-} else if (time <= 44){
+} else if (time >= 30 && time <= 44){
     console.log('third quarter')
-} else if (time <= 59){
+} else if (time >= 45 && time <= 59){
     console.log('fourth quarter')
 } else{
     console.log('went beyond the time space')
@@ -160,8 +160,8 @@ switch (userNumber){
 //
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
-let x = prompt('drive something')
-if (x === 'false' || x === 'null' || x === 'undefined' || x === 'Nan' || x === '' || x === '0'){
+let x = false
+if (x === false || x === null || x === undefined || x === NaN || x === '' || x === 0){
     console.log('default')
 }else{
     console.log(x)
