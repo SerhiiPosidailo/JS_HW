@@ -82,8 +82,12 @@ ulLi_2('Friday', 5)
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
-function creatingLists(...arr) {
-    return arr
+function creatingLists(arr) {
+    document.write(`<ul>`)
+    for (let arrElement of arr) {
+        document.write(`<li>${arrElement}</li>`)
+    }
+    document.write(`</ul>`)
 }
 
 let resFunctionCreatingLists = creatingLists([1, 3, true, false, 'hello', 'friday'])
