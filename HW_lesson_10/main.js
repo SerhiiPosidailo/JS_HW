@@ -8,15 +8,22 @@ form_1.onsubmit = function (e) {
         age: this.age.value
     }
 
+    this.name.value = ''
+    this.surname.value = ''
+    this.age.value = ''
 
     let div_1 = document.createElement('div')
     for (let element in newObject) {
         let h4 = document.createElement('h4')
+
         h4.innerText = `${element}: ${newObject[element]}`
         div_1.appendChild(h4)
+
     }
     document.body.appendChild(div_1)
+
 }
+
 
 // ==========================
 // є сторінка, на якій є блок, я кому знаходиьтся цифра. написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
@@ -174,7 +181,7 @@ buttonDel.innerText = 'del'
 
 document.body.append(h1, buttonDel)
 buttonDel.onclick = function () {
-    h1.setAttribute('id', '')
+    h1.remove()
 }
 
 //  - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
