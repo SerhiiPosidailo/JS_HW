@@ -19,6 +19,7 @@ form_1.onsubmit = function (e) {
         h4.innerText = `${element}: ${newObject[element]}`
         div_1.appendChild(h4)
 
+
     }
     document.body.appendChild(div_1)
 
