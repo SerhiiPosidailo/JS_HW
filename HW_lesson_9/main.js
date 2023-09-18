@@ -19,7 +19,7 @@ div.classList.add('wrap', 'collapse', 'alpha', 'beta')
 
 div.innerText = 'hello Okten'
 
-document.body.appendChild(div)
+document.body.append(div, div.cloneNode(true))
 
 // - Є масив:
 //     ['Main','Products','About us','Contacts']

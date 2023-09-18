@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let json = localStorage.getItem('sessions')
+    let sessions = json ? JSON.parse(json) : [];
+
+    for (let session of sessions) {
+        let wrapper = document.createElement('div');
+        let date = document.createElement('div');
+        let time = document.createElement('div');
+
+        const dateObj = formatDate(session.date)
+
+        date.innerText = `Date: ${dateObj.YYYY} / ${dateObj.MM} / ${dateObj.DD}`
+        time.innerText = `Date: ${dateObj.hh} : ${dateObj.mm} : ${dateObj.ss}`
+        wrapper.append(date, time);
+        document.body.appendChild(wrapper);
+    }
+
+
+    function formatDate (date) {
+        let dateObj = new Date(date);
+        let YYYY = dateObj.getFullYear().toString();
+        let MM = (dateObj.getMonth() + 1).toString();
+        let DD = dateObj.getDate().toString();
+        let hh = dateObj.getHours().toString();
+        let mm = dateObj.getMinutes().toString();
+        let ss = dateObj.getSeconds().toString();
+
+        return {
+            YYYY,
+            MM: MM.length < 2 ? `0${MM}` : MM,
+            DD: DD.length < 2 ? `0${MM}` : DD,
+            hh: hh.length < 2 ? `0${MM}` : hh,
+            mm: mm.length < 2 ? `0${MM}` : mm,
+            ss: ss.length < 2 ? `0${MM}` : ss,
+        }
+    }
+</script>
+</body>
+</html>
