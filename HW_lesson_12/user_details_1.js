@@ -16,6 +16,9 @@ name.innerText = `Name: ${resJson.name}`
 let username = document.createElement('h3')
 username.innerText = `Username: ${resJson.username}`
 
+let email = document.createElement('h3')
+email.innerText = `Email: ${resJson.email}`
+
 let phone = document.createElement('h3')
 phone.innerText = `Phone: ${resJson.phone}`
 
@@ -40,6 +43,6 @@ for (const companyKey in resJson.company) {
     companyUL.appendChild(liCompani)
 }
 h3Company.appendChild(companyUL)
-div.append(id ,name, username,phone, website, addressh3, h3Company)
+div.append(id ,name, username, email, phone, website, addressh3, h3Company)
 document.body.appendChild(div)
 
