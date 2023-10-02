@@ -1,0 +1,26 @@
+#wrapper > h1 {
+    text-align: center;
+}
+
+#conteiner{
+    color: white;
+    background: linear-gradient(to right, blue, pink);
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+button {
+    font-size: 20px;
+    width: 90vw;
+    height: 5vh;
+    margin-left: 5vw;
+    background-color: rgba(122, 0, 255, 0.44);
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+div > p{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 233, 2);
+}

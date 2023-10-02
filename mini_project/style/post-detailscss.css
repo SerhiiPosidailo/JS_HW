@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    background: linear-gradient(to right, #0043f8, #e4ff01);
+    border-radius: 20px;
+    padding: 10px;
+}
+.wrapper > h1 {
+    margin: 0;
+}
+
+.wrapper > h2 {
+    color: white;
+}
+.wrapper > h3 {
+    color: white;
+}
+.wrapConteiner{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.comment {
+    flex-wrap: wrap;
+    background-color: rgba(250, 58, 58, 0.68);
+    width: 18vw;
+    padding: 2px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
